@@ -6,17 +6,13 @@
     "nodeCount": 6,
     "author": "vschroeter",
     "cc_by_sa_consent": true,
-    "is_synthetic": false,
     "nodes": [
         {
             "name": "microphone",
             "namespace": "/",
             "localhost_only": false,
             "publishers": [
-                {
-                    "name": "/parameter_events",
-                    "type": "rcl_interfaces/msg/ParameterEvent"
-                },
+
                 {
                     "name": "/respeaker/audio",
                     "type": "rosass_msgs/msg/AudioBuffer"
@@ -56,16 +52,12 @@
                 {
                     "name": "/va_state",
                     "type": "rosass_msgs/msg/AudioMarker"
-                },
-                {
-                    "name": "/resources/new_resources_available",
-                    "type": "std_msgs/msg/Empty"
                 }
             ],
             "subscribers": [
                 {
-                    "name": "/resources/new_resources_available",
-                    "type": "std_msgs/msg/Empty"
+                    "name": "/parameter_events1",
+                    "type": "rcl_interfaces/msg/ParameterEvent"
                 }
             ],
             "services": [
@@ -101,10 +93,7 @@
             "namespace": "/",
             "localhost_only": false,
             "publishers": [
-                {
-                    "name": "/parameter_events",
-                    "type": "rcl_interfaces/msg/ParameterEvent"
-                },
+
                 {
                     "name": "/resources/new_resources_available",
                     "type": "std_msgs/msg/Empty"
@@ -130,6 +119,10 @@
                 {
                     "name": "/system/i2c/writeArray",
                     "type": "hardware_interfaces_msgs/msg/I2CwriteArray"
+                },
+                {
+                    "name": "/parameter_events1",
+                    "type": "rcl_interfaces/msg/ParameterEvent"
                 }
             ],
             "services": [
@@ -177,10 +170,7 @@
             "namespace": "/",
             "localhost_only": false,
             "publishers": [
-                {
-                    "name": "/parameter_events",
-                    "type": "rcl_interfaces/msg/ParameterEvent"
-                },
+
                 {
                     "name": "/resources/new_resources_available",
                     "type": "std_msgs/msg/Empty"
@@ -242,6 +232,10 @@
                 {
                     "name": "/resources/new_resources_available",
                     "type": "std_msgs/msg/Empty"
+                },
+                {
+                    "name": "/parameter_events1",
+                    "type": "rcl_interfaces/msg/ParameterEvent"
                 }
             ],
             "services": [
@@ -298,10 +292,7 @@
             "namespace": "/",
             "localhost_only": false,
             "publishers": [
-                {
-                    "name": "/parameter_events",
-                    "type": "rcl_interfaces/msg/ParameterEvent"
-                },
+
                 {
                     "name": "/resources/new_resources_available",
                     "type": "std_msgs/msg/Empty"
@@ -363,6 +354,10 @@
                 {
                     "name": "/resources/new_resources_available",
                     "type": "std_msgs/msg/Empty"
+                },
+                {
+                    "name": "/parameter_events1",
+                    "type": "rcl_interfaces/msg/ParameterEvent"
                 }
             ],
             "services": [
@@ -419,10 +414,7 @@
             "namespace": "/",
             "localhost_only": false,
             "publishers": [
-                {
-                    "name": "/parameter_events",
-                    "type": "rcl_interfaces/msg/ParameterEvent"
-                },
+
                 {
                     "name": "/resources/new_resources_available",
                     "type": "std_msgs/msg/Empty"
@@ -484,6 +476,10 @@
                 {
                     "name": "/resources/new_resources_available",
                     "type": "std_msgs/msg/Empty"
+                },
+                {
+                    "name": "/parameter_events1",
+                    "type": "rcl_interfaces/msg/ParameterEvent"
                 }
             ],
             "services": [
@@ -656,10 +652,7 @@
                     "name": "/mouth/text",
                     "type": "displays_msgs/msg/DisplayText"
                 },
-                {
-                    "name": "/parameter_events",
-                    "type": "rcl_interfaces/msg/ParameterEvent"
-                },
+
                 {
                     "name": "/resources/new_resources_available",
                     "type": "std_msgs/msg/Empty"
@@ -701,6 +694,10 @@
                 {
                     "name": "/voice_equalized",
                     "type": "rosass_msgs/msg/AudioBuffer"
+                },
+                {
+                    "name": "/parameter_events1",
+                    "type": "rcl_interfaces/msg/ParameterEvent"
                 }
             ],
             "services": [
